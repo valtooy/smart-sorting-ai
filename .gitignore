@@ -1,0 +1,10 @@
+# Ignore virtual environment
+venv/
+__pycache__/
+
+# Ignore dataset if large
+dataset/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

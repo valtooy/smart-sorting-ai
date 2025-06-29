@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Sorting</title>
+</head>
+<body style="text-align: center; font-family: Arial;">
+    <h1>🍎 Smart Sorting</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" width="300">
+    {% endif %}
+</body>
+</html>
